@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<p>Click the button to get the square root of each element in the array.</p>
+
+<button onclick="myFunction()">Square Root</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [1,4,9,25,36,81,225];
+document.getElementById("demo").innerHTML = numbers;
+
+function myFunction() {
+  x = document.getElementById("demo")
+  x.innerHTML = numbers.map(Math.sqrt);
+}
+</script>
+
+</body>
+</html>
