@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to extract the first and the seventh elements from the array.[1,2,3,4,5,6,7,8,9]</p>
+
+<button onclick="myFunction()">Slice</button>
+
+<p id="demo"></p>
+
+<script>
+    
+function myFunction() {
+    
+  var numbers = [1,2,3,4,5,6,7,8,9];
+  
+  var divider = numbers.slice(1,7);
+  
+  document.getElementById("demo").innerHTML = divider;
+}
+</script>
+
+</body>
+</html>
