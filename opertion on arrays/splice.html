@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+<p>Click the button to remove two elements from the array.[1,2,3,4,5,6,7,8,9]</p>
+
+<button onclick="myFunction()">Remove(Splice)</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [1,2,3,4,5,6,7,8,9];
+document.getElementById("demo").innerHTML = numbers;
+
+function myFunction() {
+    numbers.splice(0, 1);
+  document.getElementById("demo").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>
