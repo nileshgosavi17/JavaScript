@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<p>Click the button to add a next element to the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [1,2,3,4];
+var counter = 5;
+document.getElementById("demo").innerHTML = numbers;
+
+function myFunction() {
+  numbers.push(counter);
+  counter=counter+1;
+  document.getElementById("demo").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>
