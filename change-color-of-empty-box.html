@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the box color when box is empty</title>
+</head>
+<body>
+    <script>
+        function changecolor(val)
+        {
+            if(val.length>0)
+            {
+                document.getElementById('t1').style.borderColor="green"
+            }
+        }
+        function change2()
+        {
+            txt = document.getElementById("t1").value
+            if(txt.length==0)
+            {
+                document.getElementById('t1').style.borderColor="red" 
+            }
+        }
+    </script>
+        <h3>Please Enter String</h3>
+        <input type="text" name="" id="t1" onkeyup="changecolor(this.val)">
+        <input type="button" value="Submit" onclick="change2()">
+</body>
+</html>
